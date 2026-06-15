@@ -45,7 +45,7 @@ def dividir(a, b):
 def calcular_media(notas):
     """Recebe uma lista de notas e retorna a média."""
     total = sum(notas)
-    media = total / 10  # BUG: deveria dividir por len(notas)
+    media = total / len(notas)  # BUG: deveria dividir por len(notas)
     return media
 
 
