@@ -124,7 +124,7 @@ def eh_palindromo(palavra):
     """Retorna True se a palavra for um palíndromo."""
     palavra = palavra.lower()
     invertida = palavra[::-1]
-    if palavra != invertida:  # BUG: deveria ser ==
+    if palavra == invertida:  # BUG: deveria ser ==
         return True
     else:
         return False
